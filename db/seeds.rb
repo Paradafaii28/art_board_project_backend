@@ -23,13 +23,9 @@ user4 = Ideaboard.create(user: "Rachel")
 
 # Room
 livingroom1 = Room.create(name:"Living Room", ideaboard: user1)
-livingroom2 = Room.create(name:"Living Room", ideaboard: user3)
 kitchenanddiningroom1 = Room.create(name:"Kitchen & Dining Room", ideaboard: user2)
-kitchenanddiningroom2 = Room.create(name:"Kitchen & Dining Room", ideaboard: user4)
 bedroom1 = Room.create(name:"Bedroom", ideaboard: user1)
-bedroom2 = Room.create(name:"Bedroom", ideaboard: user2)
-bathroom1= Room.create(name:"Bathroom", ideaboard: user4)
-bathroom2 = Room.create(name:"Bathroom", ideaboard: user3)
+bathroom1= Room.create(name:"Bathroom", ideaboard: user3)
 
 # #Roomfurniture earthtone
 # roomFurniture1 = RoomFurniture.create(room: livingroom1, furniture: earthoffice1)
