@@ -1,7 +1,7 @@
 class RoomsController < ApplicationController
     def index
         @rooms = Room.all
-        render json: @rooms, include: [:room_furnitures]
+        render json: @rooms, include: [:room_furnitures, :furnitures]
     end
 
     def show
