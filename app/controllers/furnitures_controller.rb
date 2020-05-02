@@ -1,7 +1,7 @@
 class FurnituresController < ApplicationController
     def index
         @furnitures = Furniture.all
-        render json: @furnitures, include: [:room_furnitures]
+        render json: @furnitures, include: [:room_furnitures, :theme]
     end
 
     def show
