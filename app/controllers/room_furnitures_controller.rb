@@ -11,8 +11,8 @@ class RoomfurnituresController < ApplicationController
 
     def create
         @roomfurniture = RoomFurniture.create(
-            category: params[:category],
-            image: params[:image],
+            room: params[:room],
+            furniture: params[:furniture],
             theme_id: params[:theme_id]
             )
         render json: @roomfurniture
@@ -21,8 +21,8 @@ class RoomfurnituresController < ApplicationController
     def update
         @roomfurniture = RoomFurniture.find(params[:id])
             @roomfurniture.update(
-            category: params[:category],
-            image: params[:image],
+            room: params[:room],
+            furniture: params[:furniture],
             theme_id: params[:theme_id]
             )
             render json: @roomfurniture, status: :accepted 
