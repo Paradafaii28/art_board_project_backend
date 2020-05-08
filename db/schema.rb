@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_29_142927) do
+ActiveRecord::Schema.define(version: 2020_05_07_193812) do
 
   create_table "furnitures", force: :cascade do |t|
     t.string "category"
@@ -19,12 +19,6 @@ ActiveRecord::Schema.define(version: 2020_04_29_142927) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["theme_id"], name: "index_furnitures_on_theme_id"
-  end
-
-  create_table "ideaboards", force: :cascade do |t|
-    t.string "user"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "room_furnitures", force: :cascade do |t|
@@ -47,10 +41,8 @@ ActiveRecord::Schema.define(version: 2020_04_29_142927) do
 
   create_table "rooms", force: :cascade do |t|
     t.string "name"
-    t.integer "ideaboard_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["ideaboard_id"], name: "index_rooms_on_ideaboard_id"
   end
 
   create_table "themes", force: :cascade do |t|
@@ -63,5 +55,4 @@ ActiveRecord::Schema.define(version: 2020_04_29_142927) do
   add_foreign_key "room_furnitures", "furnitures"
   add_foreign_key "room_furnitures", "rooms"
   add_foreign_key "roomideas", "themes"
-  add_foreign_key "rooms", "ideaboards"
 end

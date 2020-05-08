@@ -1,7 +1,7 @@
-class RoomfurnituresController < ApplicationController
+class RoomFurnituresController < ApplicationController
     def index
         @roomfurnitures = RoomFurniture.all
-        render json: @roomroomfurnitures, include: [:room, :furniture]
+        render json: @roomfurnitures, include: [:room, :furniture]
     end
 
     def show
@@ -10,20 +10,22 @@ class RoomfurnituresController < ApplicationController
     end
 
     def create
-        @roomfurniture = RoomFurniture.create(
-            category: params[:category],
-            image: params[:image],
-            theme_id: params[:theme_id]
+        @array = []
+        params[:addFurniture].each do |furniture|
+            @roomfurniture = RoomFurniture.create(
+                furniture_id: furniture["id"],
+                room_id: params[:roomid]
             )
-        render json: @roomfurniture
+            @array.push(@roomfurniture)
+        end
+        render json: @array
     end 
 
     def update
         @roomfurniture = RoomFurniture.find(params[:id])
             @roomfurniture.update(
-            category: params[:category],
-            image: params[:image],
-            theme_id: params[:theme_id]
+            room: params[:room],
+            furniture: params[:furniture],
             )
             render json: @roomfurniture, status: :accepted 
     end
