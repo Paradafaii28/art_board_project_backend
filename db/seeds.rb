@@ -7,82 +7,19 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-RoomFurniture.destroy_all
 Room.destroy_all
 Furniture.destroy_all
 Theme.destroy_all
 Roomidea.destroy_all
-Ideaboard.destroy_all
+RoomFurniture.destroy_all
 
-
-# Ideaboard
-user1 = Ideaboard.create(user: "Alice")
-user2 = Ideaboard.create(user: "Corey")
-user3 = Ideaboard.create(user: "Lily")
-user4 = Ideaboard.create(user: "Rachel")
 
 # Room
-livingroom1 = Room.create(name:"Living Room", ideaboard: user1)
-kitchenanddiningroom1 = Room.create(name:"Kitchen and Dining", ideaboard: user2)
-bedroom1 = Room.create(name:"Bedroom", ideaboard: user1)
-bathroom1= Room.create(name:"Bathroom", ideaboard: user3)
+livingroom1 = Room.create(name:"Living Room")
+kitchenanddiningroom1 = Room.create(name:"Kitchen and Dining")
+bedroom1 = Room.create(name:"Bedroom")
+bathroom1= Room.create(name:"Bathroom")
 
-# #Roomfurniture earthtone
-# roomFurniture1 = RoomFurniture.create(room: livingroom1, furniture: earthoffice1)
-# roomFurniture2 = RoomFurniture.create(room: livingroom1, furniture: earthoffice2)
-# roomFurniture3 = RoomFurniture.create(room: livingroom1, furniture: earthoffice3)
-# roomFurniture4 = RoomFurniture.create(room: livingroom1, furniture: earthoffice4)
-# roomFurniture5 = RoomFurniture.create(room: livingroom1, furniture: earthoffice5)
-# roomFurniture6 = RoomFurniture.create(room: livingroom1, furniture: earthoffice6)
-
-# roomFurniture7 = RoomFurniture.create(room: livingroom1, furniture: earthsofa1)
-# roomFurniture8 = RoomFurniture.create(room: livingroom1, furniture: earthsofa2)
-# roomFurniture9 = RoomFurniture.create(room: livingroom1, furniture: earthsofa3)
-# roomFurniture10 = RoomFurniture.create(room: livingroom1, furniture: earthsofa4)
-# roomFurniture11 = RoomFurniture.create(room: livingroom1, furniture: earthsofa5)
-# roomFurniture12 = RoomFurniture.create(room: livingroom1, furniture: earthsofa6)
-
-# roomFurniture13 = RoomFurniture.create(room: livingroom1, furniture: earthcarbinet1)
-# roomFurniture14 = RoomFurniture.create(room: livingroom1, furniture: earthcarbinet2)
-# roomFurniture15 = RoomFurniture.create(room: livingroom1, furniture: earthcarbinet3)
-# roomFurniture16 = RoomFurniture.create(room: livingroom1, furniture: earthcarbinet4)
-# roomFurniture17 = RoomFurniture.create(room: livingroom1, furniture: earthcarbinet5)
-# roomFurniture18 = RoomFurniture.create(room: livingroom1, furniture: earthcarbinet6)
-# roomFurniture19 = RoomFurniture.create(room: livingroom1, furniture: earthcarbinet7)
-# roomFurniture20 = RoomFurniture.create(room: livingroom1, furniture: earthcarbinet8)
-# roomFurniture21 = RoomFurniture.create(room: livingroom1, furniture: earthcarbinet9)
-# roomFurniture22 = RoomFurniture.create(room: livingroom1, furniture: earthcarbinet10)
-
-# roomFurniture23 = RoomFurniture.create(room: livingroom1, furniture: earthdinnerset1)
-# roomFurniture24 = RoomFurniture.create(room: livingroom1, furniture: earthdinnerset2)
-# roomFurniture25 = RoomFurniture.create(room: livingroom1, furniture: earthdinnerset3)
-# roomFurniture26 = RoomFurniture.create(room: livingroom1, furniture: earthdinnerset4)
-# roomFurniture27 = RoomFurniture.create(room: livingroom1, furniture: earthdinnerset5)
-# roomFurniture28 = RoomFurniture.create(room: livingroom1, furniture: earthdinnerset6)
-
-# roomFurniture29 = RoomFurniture.create(room: livingroom1, furniture: earthbeds1)
-# roomFurniture30 = RoomFurniture.create(room: livingroom1, furniture: earthbeds2)
-# roomFurniture31 = RoomFurniture.create(room: livingroom1, furniture: earthbeds3)
-# roomFurniture32 = RoomFurniture.create(room: livingroom1, furniture: earthbeds4)
-# roomFurniture33 = RoomFurniture.create(room: livingroom1, furniture: earthbeds5)
-# roomFurniture34 = RoomFurniture.create(room: livingroom1, furniture: earthbeds6)
-# roomFurniture35 = RoomFurniture.create(room: livingroom1, furniture: earthbeds7)
-
-# roomFurniture36 = RoomFurniture.create(room: livingroom1, furniture: earthnightstands1)
-# roomFurniture37 = RoomFurniture.create(room: livingroom1, furniture: earthnightstands2)
-# roomFurniture38 = RoomFurniture.create(room: livingroom1, furniture: earthnightstands3)
-# roomFurniture39 = RoomFurniture.create(room: livingroom1, furniture: earthnightstands4)
-# roomFurniture40 = RoomFurniture.create(room: livingroom1, furniture: earthnightstands5)
-# roomFurniture41 = RoomFurniture.create(room: livingroom1, furniture: earthnightstands6)
-
-# roomFurniture42 = RoomFurniture.create(room: livingroom1, furniture: earthvanities1)
-# roomFurniture43 = RoomFurniture.create(room: livingroom1, furniture: earthvanities2)
-# roomFurniture44 = RoomFurniture.create(room: livingroom1, furniture: earthvanities3)
-# roomFurniture45 = RoomFurniture.create(room: livingroom1, furniture: earthvanities4)
-# roomFurniture46 = RoomFurniture.create(room: livingroom1, furniture: earthvanities5)
-# roomFurniture47 = RoomFurniture.create(room: livingroom1, furniture: earthvanities6)
-# roomFurniture48 = RoomFurniture.create(room: livingroom1, furniture: earthvanities7)
-# roomFurniture49 = RoomFurniture.create(room: livingroom1, furniture: earthvanities8)
 
 
 # Theme
@@ -347,4 +284,73 @@ wintervanities3 = Furniture.create(category:"Bathroom", theme: wintertone, image
 wintervanities4 = Furniture.create(category:"Bathroom", theme: wintertone, image:"https://i.ibb.co/NnQf0Y2/wintercarbinet4.jpg")
 wintervanities5 = Furniture.create(category:"Bathroom", theme: wintertone, image:"https://i.ibb.co/0ZZFTSS/wintercarbinet5.jpg")
 wintervanities6 = Furniture.create(category:"Bathroom", theme: wintertone, image:"https://i.ibb.co/jfGRZ8Z/wintercarbinet6.jpg")
+
+# Roomidea
+bedroomIdeas1 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/93392347/resize-h800-w1164%5Ecompr-r85/8600/86003047/STL_Coastal+Bedroom+Design_86003047.jpg" , theme: earthtone)
+bedroomIdeas2= Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/76690231/resize-h800-w1163%5Ecompr-r85/4770/47707127/STL_Traditional+Bedroom+Design_47707127.jpg", theme: earthtone)
+bedroomIdeas3 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/95704303/resize-h800-w800%5Ecompr-r85/1115/111541504/STL_Traditional+Bedroom+Design_111541504.jpg", theme: earthtone)
+bedroomIdeas4 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/73855527/resize-h800-w640%5Ecompr-r85/1115/111541506/STL_Glam+Bedroom+Design_111541506.jpg", theme: earthtone)
+bedroomIdeas5 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/00731357/resize-h800-w640%5Ecompr-r85/9490/94901188/STL_Rustic+Bedroom+Design_94901188.jpg", theme: earthtone)
+bedroomIdeas6 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/98163237/resize-h800-w1234%5Ecompr-r85/2852/28521585/STL_Modern+Bedroom+Design_28521585.jpg", theme: earthtone)
+bedroomIdeas7 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/78325313/resize-h800-w1164%5Ecompr-r85/7865/78651588/STL_Farmhouse+Bedroom+Design_78651588.jpg", theme: earthtone)
+bedroomIdeas8 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/31554515/resize-h800-w533%5Ecompr-r85/1074/107498695/STL_Traditional+Bedroom+Design_107498695.jpg", theme: earthtone)
+bedroomIdeas9 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/92391612/resize-h800-w1550%5Ecompr-r85/2645/26459989/STL_Nautical+Bedroom+Design_26459989.jpg", theme: earthtone)
+bedroomIdeas10 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/12004311/resize-h800-w800%5Ecompr-r85/3283/32836048/STL_Traditional+Bedroom+Design_32836048.jpg", theme: earthtone)
+bedroomIdeas11 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/86480796/resize-h800-w1550%5Ecompr-r85/1533/15334688/STL_Farmhouse+Bedroom+Design_15334688.jpg", theme: earthtone)
+bedroomIdeas12 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/32459086/resize-h800-w533%5Ecompr-r85/2622/26220121/STL_Posh+%2526+Luxe+Bedroom+Design_26220121.jpg", theme: earthtone)
+bedroomIdeas13 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/50620433/resize-h800-w800%5Ecompr-r85/4973/49736300/STL_Modern+Farmhouse+Bedroom+Design_49736300.jpg", theme: earthtone)
+bedroomIdeas14 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/53009906/resize-h800-w1127%5Ecompr-r85/6015/60151706/STL_Traditional+Bedroom+Design_60151706.jpg", theme: earthtone)
+bedroomIdeas15 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/84216817/resize-h800-w1550%5Ecompr-r85/3040/30408572/STL_Traditional+Bedroom+Design_30408572.jpg", theme: earthtone)
+bedroomIdeas16 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/65003871/resize-h800-w1550%5Ecompr-r85/1350/13504802/STL_Cottage+Americana+Bedroom+Design_13504802.jpg", theme: earthtone)
+bedroomIdeas17 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/76105827/resize-h800-w1550%5Ecompr-r85/1398/13982886/STL_French+Country+Bedroom+Design_13982886.jpg", theme: earthtone)
+bedroomIdeas18 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/49056185/resize-h800-w1164%5Ecompr-r85/4439/44391786/STL_Modern+Farmhouse+Bedroom+Design_44391786.jpg", theme: earthtone)
+bedroomIdeas19 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/60964532/resize-h800-w1174%5Ecompr-r85/7274/72745940/STL_Posh+%2526+Luxe+Bedroom+Design_72745940.jpg", theme: earthtone)
+bedroomIdeas20 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/64108987/resize-h800-w1423%5Ecompr-r85/2302/23026841/STL_Posh+%2526+Luxe+Bedroom+Design_23026841.jpg", theme: earthtone)
+bedroomIdeas21 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/10866486/resize-h800-w800%5Ecompr-r85/8724/87249133/STL_Coastal+Bedroom+Design_87249133.jpg", theme: earthtone)
+bedroomIdeas22 = Roomidea.create(category:"Bedroom", image: "https://secure.img1-fg.wfcdn.com/im/68537975/resize-h800-w1200%5Ecompr-r85/6618/66180134/STL_Traditional+Bedroom+Design_66180134.jpg", theme: earthtone)
+
+livingroomideas1 = Roomidea.create(category:"Living Room", image: "https://secure.img1-fg.wfcdn.com/im/06462825/resize-h800-w640%5Ecompr-r85/1104/110439345/STL_Farmhouse+Entryway+Design_110439345.jpg", theme: earthtone)
+livingroomideas2 = Roomidea.create(category:"Living Room", image: "https://secure.img1-fg.wfcdn.com/im/18406129/resize-h800-w800%5Ecompr-r85/1115/111541502/STL_Farmhouse+Living+Room+Design_111541502.jpg", theme: earthtone)
+livingroomideas3 = Roomidea.create(category:"Living Room", image: "https://secure.img1-fg.wfcdn.com/im/48435696/resize-h800-w800%5Ecompr-r85/1132/113258966/STL_Farmhouse+Dining+Room+Design_113258966.jpg", theme: earthtone)
+livingroomideas4 = Roomidea.create(category:"Living Room", image: "https://secure.img1-fg.wfcdn.com/im/71990572/resize-h800-w640%5Ecompr-r85/1132/113258964/STL_Farmhouse+Entryway+Design_113258964.jpg", theme: earthtone)
+livingroomideas5 = Roomidea.create(category:"Living Room", image: "https://secure.img1-fg.wfcdn.com/im/17394224/resize-h800-w640%5Ecompr-r85/1132/113258960/STL_Farmhouse+Living+Room+Design_113258960.jpg", theme: earthtone)
+livingroomideas6 = Roomidea.create(category:"Living Room", image: "https://secure.img1-fg.wfcdn.com/im/20439367/resize-h800-w1164%5Ecompr-r85/5379/53790084/STL_American+Traditional+Office+Design_53790084.jpg", theme: earthtone)
+livingroomideas7 = Roomidea.create(category:"Living Room", image: "https://secure.img1-fg.wfcdn.com/im/38667943/c_crop_resize_zoom-h675-w450%5Eresize-h749-w500%5Ecompr-r85/4036/40364706/STL_default_name_40364706.jpg", theme: earthtone)
+livingroomideas8 = Roomidea.create(category:"Living Room", image: "https://secure.img1-fg.wfcdn.com/im/57005785/resize-h800-w800%5Ecompr-r85/9733/97339881/STL_Farmhouse+Living+Room+Design_97339881.jpg", theme: earthtone)
+livingroomideas9 = Roomidea.create(category:"Living Room", image: "https://secure.img1-fg.wfcdn.com/im/90001856/resize-h800-w1163%5Ecompr-r85/3889/38896598/STL_French+Country+Living+Room+Design_38896598.jpg", theme: earthtone)
+livingroomideas10 = Roomidea.create(category:"Living Room", image: "https://secure.img1-fg.wfcdn.com/im/89765736/resize-h800-w1122%5Ecompr-r85/4767/47678074/STL_Cottage+Americana+Living+Room+Design_47678074.jpg", theme: earthtone)
+
+kitchenroomideas1 = Roomidea.create(category:"Kitchen Room", image: "https://secure.img1-fg.wfcdn.com/im/26306924/resize-h800-w800%5Ecompr-r85/1089/108940986/STL_Farmhouse+Dining+Room+Design_108940986.jpg", theme: earthtone)
+kitchenroomideas2 = Roomidea.create(category:"Kitchen Room", image: "https://secure.img1-fg.wfcdn.com/im/53538162/c_crop_resize_zoom-h563-w450%5Eresize-h625-w500%5Ecompr-r85/9571/95715605/STL_default_name_95715605.jpg", theme: earthtone)
+kitchenroomideas3 = Roomidea.create(category:"Kitchen Room", image: "https://secure.img1-fg.wfcdn.com/im/26971946/resize-h800-w533%5Ecompr-r85/3357/33577397/STL_Eclectic+Dining+Room+Design_33577397.jpg", theme: earthtone)
+kitchenroomideas4 = Roomidea.create(category:"Kitchen Room", image: "https://secure.img1-fg.wfcdn.com/im/44478835/resize-h800-w640%5Ecompr-r85/1159/115979048/STL_Farmhouse+Dining+Room+Design_115979048.jpg", theme: earthtone)
+kitchenroomideas5 = Roomidea.create(category:"Kitchen Room", image: "https://secure.img1-fg.wfcdn.com/im/86642916/resize-h800-w629%5Ecompr-r85/1474/14742426/STL_Modern+Farmhouse+Dining+Room+Design_14742426.jpg", theme: earthtone)
+kitchenroomideas6 = Roomidea.create(category:"Kitchen Room", image: "https://secure.img1-fg.wfcdn.com/im/19952305/resize-h800-w800%5Ecompr-r85/8766/87669459/STL_Traditional+Dining+Room+Design_87669459.jpg", theme: earthtone)
+kitchenroomideas7 = Roomidea.create(category:"Kitchen Room", image: "https://secure.img1-fg.wfcdn.com/im/52511284/resize-h800-w768%5Ecompr-r85/2269/22694531/STL_Eclectic+Dining+Room+Design_22694531.jpg", theme: earthtone)
+kitchenroomideas8 = Roomidea.create(category:"Kitchen Room", image: "https://secure.img1-fg.wfcdn.com/im/67974154/resize-h800-w1171%5Ecompr-r85/8223/82235568/STL_Coastal+Dining+Room+Design_82235568.jpg", theme: earthtone)
+kitchenroomideas9 = Roomidea.create(category:"Kitchen Room", image: "https://secure.img1-fg.wfcdn.com/im/53333238/resize-h800-w1194%5Ecompr-r85/3600/36007231/STL_Traditional+Dining+Room+Design_36007231.jpg", theme: earthtone)
+kitchenroomideas10 = Roomidea.create(category:"Kitchen Room", image: "https://secure.img1-fg.wfcdn.com/im/57018871/resize-h800-w640%5Ecompr-r85/8574/85748815/STL_Traditional+Dining+Room+Design_85748815.jpg", theme: earthtone)
+kitchenroomideas11 = Roomidea.create(category:"Kitchen Room", image: "https://secure.img1-fg.wfcdn.com/im/37567454/resize-h800-w533%5Ecompr-r85/3596/35968162/STL_Modern+Farmhouse+Kitchen+Design_35968162.jpg", theme: earthtone)
+
+bathroomideas1 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/02016196/resize-h800-w1067%5Ecompr-r85/2991/29915627/STL_Modern+Farmhouse+Bathroom+Design_29915627.jpg", theme: earthtone)
+bathroomideas2 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/27957293/resize-h800-w800%5Ecompr-r85/8630/86301057/STL_Coastal+Bathroom+Design_86301057.jpg", theme: earthtone)
+bathroomideas3 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/77423408/resize-h800-w800%5Ecompr-r85/8838/88389212/STL_Modern+%2526+Contemporary+Bathroom+Design_88389212.jpg", theme: earthtone)
+bathroomideas4 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/56704621/resize-h800-w529%5Ecompr-r85/1034/10346691/STL_Traditional+Bathroom+Design_10346691.jpg", theme: earthtone)
+bathroomideas5 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/02591508/resize-h800-w800%5Ecompr-r85/8904/89048688/STL_Modern+%2526+Contemporary+Bathroom+Design_89048688.jpg", theme: earthtone)
+bathroomideas6 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/67474966/resize-h800-w533%5Ecompr-r85/3599/35996561/STL_Traditional+Bathroom+Design_35996561.jpg", theme: earthtone)
+bathroomideas7 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/70948860/resize-h800-w640%5Ecompr-r85/3572/35729698/STL_Sleek+%2526+Chic+Modern+Bathroom+Design_35729698.jpg", theme: earthtone)
+bathroomideas8 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/71609192/resize-h800-w1163%5Ecompr-r85/4957/49573316/STL_Modern+Farmhouse+Bathroom+Design_49573316.jpg", theme: earthtone)
+bathroomideas9 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/83734443/resize-h800-w800%5Ecompr-r85/6296/62967877/STL_Farmhouse+Bathroom+Design_62967877.jpg", theme: earthtone)
+bathroomideas10 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/77423408/resize-h800-w800%5Ecompr-r85/8838/88389212/STL_Modern+%2526+Contemporary+Bathroom+Design_88389212.jpg", theme: earthtone)
+bathroomideas11 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/01669766/resize-h800-w1164%5Ecompr-r85/5760/57609648/STL_Modern+Farmhouse+Bathroom+Design_57609648.jpg", theme: earthtone)
+bathroomideas12 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/98509528/resize-h800-w800%5Ecompr-r85/8997/89971746/STL_Farmhouse+Bathroom+Design_89971746.jpg", theme: earthtone)
+bathroomideas13 = Roomidea.create(category:"Bathroom", image: "https://secure.img1-fg.wfcdn.com/im/61385534/resize-h800-w800%5Ecompr-r85/6519/65190109/STL_Scandinavian+Bathroom+Design_65190109.jpg", theme: earthtone)
+
+#Roomfurniture earthtone
+roomFurniture1 = RoomFurniture.create(room: livingroom1, furniture: earthoffice4)
+roomFurniture2 = RoomFurniture.create(room: livingroom1, furniture: earthoffice5)
+roomFurniture3 = RoomFurniture.create(room: livingroom1, furniture: earthoffice2)
+roomFurniture4 = RoomFurniture.create(room: livingroom1, furniture: earthoffice6)
+roomFurniture5 = RoomFurniture.create(room: livingroom1, furniture: earthoffice3)
+
 
