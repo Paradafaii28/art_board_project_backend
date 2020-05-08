@@ -10,11 +10,15 @@ class RoomFurnituresController < ApplicationController
     end
 
     def create
-        @roomfurniture = RoomFurniture.create(
-            room_id: params[:room],
-            furniture_id: params[:furniture]
+        @array = []
+        params[:addFurniture].each do |furniture|
+            @roomfurniture = RoomFurniture.create(
+                furniture_id: furniture["id"],
+                room_id: params[:roomid]
             )
-        render json: @roomfurniture
+            @array.push(@roomfurniture)
+        end
+        render json: @array
     end 
 
     def update

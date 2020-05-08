@@ -22,6 +22,7 @@ bathroom1= Room.create(name:"Bathroom")
 
 
 
+
 # Theme
 earthtone = Theme.create(tone: "Earth Tone")
 vintagetone = Theme.create(tone: "Vintage Tone")
