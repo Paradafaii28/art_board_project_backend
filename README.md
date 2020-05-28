@@ -1,24 +1,19 @@
-# README
+# Art board App 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project use the ruby on rails for the backend, used the many to many relationtship and store all the funiture in the database.
 
-Things you may want to cover:
+* Setup
+You will need to have rails pre-installed to view this project. From there you will need to: 
+    * bundle install 
+    * rails db:migrate
+    * rails db:seed 
+    * run rails s
 
-* Ruby version
+### Technologies 
 
-* System dependencies
+* Ruby on Rails
 
-* Configuration
+### Authors
 
-* Database creation
+* Parada (Alice) Richardson - Github Repo
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
